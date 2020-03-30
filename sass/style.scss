@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    font-family: 'El Messiri', sans-serif;
+}
+
+body {
+    background: url(../img/unnamed.jpg) center (center / cover);
+}
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 40px 0 10px 0;
+    line-height: 50px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__card {
+        width: 120px;
+        height: 200px;
+        background: url(../img/77358594_d00132r04copy2.png) center (center / cover) no-repeat;
+        margin: 17px 0 0 17px;
+        border-radius: 15px;
+        border: 1px solid;
+        border-color: #000000;
+        &_active {
+            width: 120px;
+            height: 200px;
+            font-size: 130px;
+            text-align: center;
+            background-color: #159F5C;
+            margin: 17px 0 0 17px;
+            padding-top: 10px;
+            border-radius: 15px;
+            background-image: linear-gradient(to top, #D0CDD1 0%, #E7EAF1 100%);
+            border: 1px solid;
+            border-color: #000000;
+        }
+        &__span {
+            border: none;
+        }
+    }
+}
+@import 'media';
+@import 'modal';

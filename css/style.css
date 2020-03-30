@@ -1,0 +1,127 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'El Messiri', sans-serif;
+}
+
+body {
+  background: url(../img/unnamed.jpg) center center/cover;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px 0 10px 0;
+  line-height: 50px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cards__card {
+  width: 120px;
+  height: 200px;
+  background: url(../img/77358594_d00132r04copy2.png) center center/cover no-repeat;
+  margin: 17px 0 0 17px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.cards__card_active {
+  width: 120px;
+  height: 200px;
+  font-size: 130px;
+  text-align: center;
+  background-color: #159F5C;
+  margin: 17px 0 0 17px;
+  padding-top: 10px;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#D0CDD1), to(#E7EAF1));
+  background-image: linear-gradient(to top, #D0CDD1 0%, #E7EAF1 100%);
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.cards__card__span {
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 40px;
+    margin: 40px 0 0 0;
+  }
+  .cards {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .cards__card {
+    width: 110px;
+    height: 190px;
+  }
+  .cards__card_active {
+    width: 110px;
+    height: 190px;
+    font-size: 130px;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.modal {
+  width: 600px;
+  height: 500px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#D0CDD1), to(#E7EAF1));
+  background-image: linear-gradient(to top, #D0CDD1 0%, #E7EAF1 100%);
+  margin: 100px auto 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  padding-top: 150px;
+}
+
+.modal__gif {
+  width: 150px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.modal__button {
+  width: 130px;
+  height: 40px;
+  background-color: #021F7F;
+  color: #ffffff;
+  border: none;
+  outline: none !important;
+  border-radius: 15px;
+}
+
+.modal__subtitle {
+  font-size: 16px;
+}
+
+.more-splash {
+  -webkit-animation-name: splash;
+          animation-name: splash;
+  -webkit-animation-duration: 1.7s;
+          animation-duration: 1.7s;
+}
+/*# sourceMappingURL=style.css.map */
